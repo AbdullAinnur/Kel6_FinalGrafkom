@@ -481,6 +481,209 @@ glVertex3f(15.2,-2.5,-9.1);
 glVertex3f(15.2,-2,-9.1);
 glEnd();
 
+//Zahwa
+//PEMBENTUKAN KURSI TAMAN
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 19.0f);        //DEPAN
+glVertex3f(-9.0f, -7.2f, 19.0f);
+glVertex3f(-15.0f, -7.2f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 23.0f);        //BELAKANG
+glVertex3f(-9.0f, -7.2f, 23.0f);
+glVertex3f(-15.0f, -7.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS); //+8
+glVertex3f(-15.0f, -8.2f, 19.0f);
+glVertex3f(-15.0f, -7.2f, 19.0f);       //KIRI
+glVertex3f(-15.0f, -7.2f, 23.0f);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-9.0f, -8.2f, 19.0f);
+glVertex3f(-9.0f, -7.2f, 19.0f);        //KANAN
+glVertex3f(-9.0f, -7.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-15.0f, -8.2f, 19.0f);
+glVertex3f(-9.0f, -8.2f, 19.0f);        //ATAS
+glVertex3f(-9.0f, -8.2f, 23.0f);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+glVertex3f(-9.0f, -6.2f, 19.0f);
+glVertex3f(-9.0f, -6.2f, 19.0f);        //BAWAH
+glVertex3f(-9.0f, -6.2f, 23.0f);
+glVertex3f(-9.0f, -6.2f, 23.0f);
+glEnd();
+
+ //PEMBENTUKAN KAKI KURSI BAGIAN KIRI BELAKANG
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,19.6f);
+ glVertex3f(-14.6f, -8.2f, 19.6f);
+ glVertex3f(-14.6f, -10.0f, 19.6f);     //DEPAN
+ glVertex3f(-15.0f, -10.0f, 19.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -8.2f,19.0f);
+ glVertex3f(-14.6f, -8.2f,19.0f);
+ glVertex3f(-14.6f, -10.0f, 19.0f);     //BELAKANG
+ glVertex3f(-15.0f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-14.6f,-8.2f,19.0f);
+ glVertex3f(-14.6f, -8.2f, 19.6f);      //KIRI
+ glVertex3f(-14.6f, -10.0f, 19.6f);
+ glVertex3f(-14.6f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,19.0f);
+ glVertex3f(-15.0f, -8.2f, 19.6f);       //KANAN
+ glVertex3f(-15.0f, -10.0f, 19.6f);
+ glVertex3f(-15.0f, -10.0f, 19.0f);
+glEnd();
+
+ // KAKI KURSI BAGIAN KIRI DEPAN
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,23.0f);
+ glVertex3f(-14.6f, -8.2f, 23.0f);      //BELAKANG
+ glVertex3f(-14.6f, -10.0f, 23.0f);
+ glVertex3f(-15.0f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,22.6f);
+ glVertex3f(-14.6f, -8.2, 22.6f);       //DEPAN
+ glVertex3f(-14.6f, -10.0f, 22.6f);
+ glVertex3f(-15.0f, -10.0f, 22.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glColor3ub(160,82,45);
+ glVertex3f(-14.6f,-8.2f,23.0f);
+ glVertex3f(-14.6f, -8.2f, 22.6f);      //KIRI
+ glVertex3f(-14.6f, -10.0f, 22.6f);
+ glVertex3f(-14.6f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,23.0f);
+ glVertex3f(-15.0f, -8.2f, 22.6f);      //KANAN
+ glVertex3f(-15.0f, -10.0f, 22.6f);
+ glVertex3f(-15.0f, -10.0f, 23.0f);
+glEnd();
+
+// KAKI KURSI BAGIAN KANAN DEPAN
+glBegin(GL_QUADS); //+8
+ glVertex3f(-9.0f,-8.2f,23.0f);
+ glVertex3f(-9.6f, -8.2f, 23.0f);       //BELAKANG
+ glVertex3f(-9.6f, -10.0f, 23.0f);
+ glVertex3f(-9.0f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,22.6f);
+ glVertex3f(-9.6f, -8.2f, 22.6f);       //DEPAN
+ glVertex3f(-9.6f, -10.0f, 22.6f);
+ glVertex3f(-9.0f, -10.0f, 22.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-9.6f, -8.2f,23.0f);
+ glVertex3f(-9.6f, -8.2f, 22.6f);       //KIRI
+ glVertex3f(-9.6f, -10.0f, 22.6f);
+ glVertex3f(-9.6f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS); //+8
+ glVertex3f(-9.0f, -8.2f,23.0f);
+ glVertex3f(-9.0f, -8.2f, 22.6f);       //KANAN
+ glVertex3f(-9.0f, -10.0f, 22.6f);
+ glVertex3f(-9.0f, -10.0f, 23.0f);
+glEnd();
+
+//KAKI KURSI BAGIAN KANAN BELAKNG
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,19.0f);
+ glVertex3f(-9.6f, -8.2f, 19.0f);       //BELAKANG
+ glVertex3f(-9.6f, -10.0f, 19.0f);
+ glVertex3f(-9.0f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,19.6f);
+ glVertex3f(-9.6f, -8.2f, 19.6f);       //DEPAN
+ glVertex3f(-9.6f, -10.0f, 19.6f);
+ glVertex3f(-9.0f, -10.0f, 19.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-9.6f,-8.2f,19.0f);
+ glVertex3f(-9.6f, -8.2f, 19.6f);       //KIRI
+ glVertex3f(-9.6f, -10.0f, 19.6f);
+ glVertex3f(-9.6f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f,-8.2f,19.0f);
+ glVertex3f(-9.0f, -8.2f, 19.6f);       //kanan
+ glVertex3f(-9.0f, -10.0f, 19.6f);
+ glVertex3f(-9.0f, -10.0f, 19.0f);
+glEnd();
+
+//SENDERAN KURSI GURU
+glBegin(GL_QUADS); //+8
+glColor3ub(160,82,45);
+ glVertex3f(-15.0f, -5.2f,19.4f);
+ glVertex3f(-9.0f, -5.2f, 19.4f);      //DEPAN
+ glVertex3f(-9.0f, -7.5f, 19.4f);
+ glVertex3f(-15.0f,-7.5f,19.4f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -5.2f,20.0f);
+ glVertex3f(-9.0f, -5.2f, 20.0f);       //BELAKANG
+ glVertex3f(-9.0f, -7.5f, 20.0f);
+ glVertex3f(-15.0f, -7.5f,20.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glColor3ub(160,82,45);
+ glVertex3f(-15.0f, -5.2f, 20.0f);
+ glVertex3f(-15.0f, -7.5f, 20.0f);       //KIRI
+ glVertex3f(-15.0f, -7.5f, 19.4f);
+ glVertex3f(-15.0f, -5.2f, 19.4f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -5.2f, 19.4f);
+ glVertex3f(-9.0f, -7.5f, 19.4f);        //KANAN
+ glVertex3f(-9.0f, -7.5f, 20.0f);
+ glVertex3f(-9.0f, -5.2f, 20.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -7.5f, 20.0f);
+ glVertex3f(-15.0f, -7.5f, 20.4f);      //ATAS
+ glVertex3f(-9.0f, -7.5f, 19.4f);
+ glVertex3f(-9.0f, -7.5f, 19.0f);
+glEnd();
 
 glFlush();
 glutSwapBuffers();
