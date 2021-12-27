@@ -267,6 +267,220 @@ glVertex3f(4,-10,15.1);
 glVertex3f(4,-4,15.1);
 glEnd();
 
+//Asrina
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-5,-4,16.1);
+glVertex3f(-5,-10,16.1);              //PINTU TIANG KIRI DEPAN 3D
+glVertex3f(-4,-10,16.1);
+glVertex3f(-4,-4,16.1);
+
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-5,-4,16.1);
+glVertex3f(-5,-10,16.1);
+glVertex3f(-5,-10,15.1);
+glVertex3f(-5,-4,15.1);
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-4,-4,16.1);
+glVertex3f(-4,-10,16.1);
+glVertex3f(-4,-10,15.1);
+glVertex3f(-4,-4,15.1);
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(4,-4,16.1);
+glVertex3f(5,-4,16.1);
+glVertex3f(1.0,-1.0,16.1);             //ATAP KANAN PINTU SEGITIGA
+glVertex3f(0.0,-1.0,16.1);
+
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(5,-4,16.1);
+glVertex3f(1.0,-1.0,16.1);
+glVertex3f(1.0,-1.0,15.1);
+glVertex3f(5,-4,15.1);
+
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(4,-4,16.1);
+glVertex3f(0.0,-1.0,16.1);
+glVertex3f(0.0,-1.0,15.1);
+glVertex3f(4,-4,15.1);
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-4,-4,16.1);
+glVertex3f(-5,-4,16.1);
+glVertex3f(-1.0,-1.0,16.1);              //ATAP KIRI PINTU SEGITIGA
+glVertex3f(0.0,-1.0,16.1);
+
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-4,-4,16.1);
+glVertex3f(0.0,-1.0,16.1);
+glVertex3f(0.0,-1.0,15.1);
+glVertex3f(-4,-4,15.1);
+glEnd();
+
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-5,-4,16.1);
+glVertex3f(-1.0,-1.0,16.1);
+glVertex3f(-1.0,-1.0,15.1);
+glVertex3f(-5,-4,15.1);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+glColor3f(1.0,1.0,1.0);
+glVertex3f(0.0,-1.0,15.1);              //PINTU SEGITIGA DEPAN
+glVertex3f(-5,-4,15.1);
+glVertex3f(5,-4,15.1);
+glEnd();
+
+
+//PEMBENTUKAN JENDELA DINDING KIRI
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15.2,-4,13.1);
+glVertex3f(-15.2,-9,13.1);                 //DINDING KIRI KACA 1
+glVertex3f(-15.2,-9,9.1);
+glVertex3f(-15.2,-4,9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15.2,-2,13.1);
+glVertex3f(-15.2,-2.5,13.1);               //ventilasi
+glVertex3f(-15.2,-2.5,9.1);
+glVertex3f(-15.2,-2,9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15.2,-4,7.1);
+glVertex3f(-15.2,-9,7.1);                 //DINDING KIRI KACA 2
+glVertex3f(-15.2,-9,3.1);
+glVertex3f(-15.2,-4,3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15.2,-2,7.1);
+glVertex3f(-15.2,-2.5,7.1);               //ventilasi
+glVertex3f(-15.2,-2.5,3.1);
+glVertex3f(-15.2,-2,3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15.2,-4,-7.1);
+glVertex3f(-15.2,-9,-7.1);                //DINDING KIRI KACA 3
+glVertex3f(-15.2,-9,-3.1);
+glVertex3f(-15.2,-4,-3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15.2,-2,-7.1);
+glVertex3f(-15.2,-2.5,-7.1);              //ventilasi
+glVertex3f(-15.2,-2.5,-3.1);
+glVertex3f(-15.2,-2,-3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15.2,-4,-13.1);
+glVertex3f(-15.2,-9,-13.1);              //DINDING KIRI KACA 4
+glVertex3f(-15.2,-9,-9.1);
+glVertex3f(-15.2,-4,-9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15.2,-2,-13.1);
+glVertex3f(-15.2,-2.5,-13.1);            //ventilasi
+glVertex3f(-15.2,-2.5,-9.1);
+glVertex3f(-15.2,-2,-9.1);
+glEnd();
+
+
+//PEMBENTUKAN JENDELA DINDING KANAN
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.2,-4,13.1);
+glVertex3f(15.2,-9,13.1);                 //DINDING KANAN KACA 1
+glVertex3f(15.2,-9,9.1);
+glVertex3f(15.2,-4,9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(15.2,-2,13.1);
+glVertex3f(15.2,-2.5,13.1);               //ventilasi
+glVertex3f(15.2,-2.5,9.1);
+glVertex3f(15.2,-2,9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.2,-4,7.1);
+glVertex3f(15.2,-9,7.1);                  //DINDING KANAN KACA 2
+glVertex3f(15.2,-9,3.1);
+glVertex3f(15.2,-4,3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(15.2,-2,7.1);
+glVertex3f(15.2,-2.5,7.1);                 //ventilasi
+glVertex3f(15.2,-2.5,3.1);
+glVertex3f(15.2,-2,3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.2,-4,-7.1);
+glVertex3f(15.2,-9,-7.1);                  //DINDING KANAN KACA 3
+glVertex3f(15.2,-9,-3.1);
+glVertex3f(15.2,-4,-3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(15.2,-2,-7.1);
+glVertex3f(15.2,-2.5,-7.1);                //ventilasi
+glVertex3f(15.2,-2.5,-3.1);
+glVertex3f(15.2,-2,-3.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.2,-4,-13.1);
+glVertex3f(15.2,-9,-13.1);                 //DINDING KANAN KACA 4
+glVertex3f(15.2,-9,-9.1);
+glVertex3f(15.2,-4,-9.1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(15.2,-2,-13.1);
+glVertex3f(15.2,-2.5,-13.1);              //ventilasi
+glVertex3f(15.2,-2.5,-9.1);
+glVertex3f(15.2,-2,-9.1);
+glEnd();
+
 
 glFlush();
 glutSwapBuffers();
