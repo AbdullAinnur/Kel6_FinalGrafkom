@@ -481,6 +481,164 @@ glVertex3f(15.2,-2.5,-9.1);
 glVertex3f(15.2,-2,-9.1);
 glEnd();
 
+//tegar
+//PILAR DINDING BELAKANG KANAN
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2.1,-15);
+glVertex3f(15,2.1,-10);                 //PILAR BELAKANG KANAN
+glVertex3f(10,2.1,-10);
+glVertex3f(10,2.1,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,15.1,-15);
+glVertex3f(15,15.1,-10);                //PILAR DEPAN KANAN ATAS
+glVertex3f(10,15.1,-10);
+glVertex3f(10,15.1,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,-10);
+glVertex3f(15,15,-10);                  //DINDING PILAR DEPAN
+glVertex3f(10,15,-10);
+glVertex3f(10,2,-10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,-15);
+glVertex3f(15,15,-15);                  //DINDING PILAR BELAKANG
+glVertex3f(10,15,-15);
+glVertex3f(10,2,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,-15);
+glVertex3f(15,15,-15);                  //DINDING PILAR KIRI
+glVertex3f(15,15,-10);
+glVertex3f(15,2,-10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(10,2,-15);
+glVertex3f(10,15,-15);                  //DINDING PILAR KANAN
+glVertex3f(10,15,-10);
+glVertex3f(10,2,-10);
+glEnd();
+
+//PILAR DINIDNG BELAKANG KIRI
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2.1,-15);
+glVertex3f(-15,2.1,-10);                //PILAR DEPAN KIRI
+glVertex3f(-10,2.1,-10);
+glVertex3f(-10,2.1,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,15.1,-15);
+glVertex3f(-15,15.1,-10);               //PILAR DEPAN KANAN ATAS
+glVertex3f(-10,15.1,-10);
+glVertex3f(-10,15.1,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,-10);
+glVertex3f(-15,15,-10);                //DINDING PILAR DEPAN
+glVertex3f(-10,15,-10);
+glVertex3f(-10,2,-10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,-15);
+glVertex3f(-15,15,-15);                //DINDING PILAR BELAKANG
+glVertex3f(-10,15,-15);
+glVertex3f(-10,2,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,-15);
+glVertex3f(-15,15,-15);               //DINDING PILAR KIRI
+glVertex3f(-15,15,-10);
+glVertex3f(-15,2,-10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-10,2,-15);
+glVertex3f(-10,15,-15);                //DINDING PILAR KANAN
+glVertex3f(-10,15,-10);
+glVertex3f(-10,2,-10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);               //PENGGANTI WARNA CONE/ATAP PILAR
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+//PEMBENTUKAN ATAP PILAR
+glBegin(GL_QUADS);
+glColor3f(0.1,0.3,0.1);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+//PEMBENTUKAN CONE
+ glPushMatrix();
+ glTranslatef(12.5, 15, 12.5);
+ glRotatef(-90, 1, 0, 0);               //CONE DEPAN KANAN
+ glutSolidCone(4, 4, 10, 10);
+ glPopMatrix();
+
+
+ glPushMatrix();
+ glTranslatef(12.5, 15, -12.5);
+ glRotatef(-90, 1, 0, 0);               //CONE BELAKANG KANAN
+ glutSolidCone(4, 4, 10, 10);
+ glPopMatrix();
+
+ glPushMatrix();
+ glTranslatef(-12.5, 20, 12.5);
+ glRotatef(-90, 1, 0, 0);               //CONE DEPAN KIRI
+ glutSolidCone(4, 4, 10, 10);
+ glPopMatrix();
+
+ glPushMatrix();
+ glTranslatef(-12.5, 15, -12.5);
+ glRotatef(-90, 1, 0, 0);               //CONE BELAKANG KANAN
+ glutSolidCone(4, 4, 10, 10);
+ glPopMatrix();
+
+ //CONE TOAAAAAAA DEPAN
+ glPushMatrix();
+ glTranslatef(-12.5, 17.5, 16);
+ glRotatef(-180, 1, 0, 0);              //CONE DEPAN KIRI
+ glutSolidCone(2, 2, 10, 10);
+ glPopMatrix();
+
+ //CONE TOAAAAAAA BELAKANG
+ glPushMatrix();
+ glTranslatef(-12.5, 17.5, 9);
+ glRotatef(-360, 1, 0, 0);              //CONE DEPAN KIRI
+ glutSolidCone(2, 2, 10, 10);
+ glPopMatrix();
+
+
+
 //Zahwa
 //PEMBENTUKAN KURSI TAMAN
 glBegin(GL_QUADS);
