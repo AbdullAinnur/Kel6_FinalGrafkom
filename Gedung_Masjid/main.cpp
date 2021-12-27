@@ -266,6 +266,7 @@ glVertex3f(4,-10,16.1);
 glVertex3f(4,-10,15.1);
 glVertex3f(4,-4,15.1);
 glEnd();
+//
 
 //Asrina
 glBegin(GL_POLYGON);
@@ -274,7 +275,6 @@ glVertex3f(-5,-4,16.1);
 glVertex3f(-5,-10,16.1);              //PINTU TIANG KIRI DEPAN 3D
 glVertex3f(-4,-10,16.1);
 glVertex3f(-4,-4,16.1);
-
 glEnd();
 
 glBegin(GL_POLYGON);
@@ -299,7 +299,6 @@ glVertex3f(4,-4,16.1);
 glVertex3f(5,-4,16.1);
 glVertex3f(1.0,-1.0,16.1);             //ATAP KANAN PINTU SEGITIGA
 glVertex3f(0.0,-1.0,16.1);
-
 glEnd();
 
 glBegin(GL_POLYGON);
@@ -307,7 +306,6 @@ glVertex3f(5,-4,16.1);
 glVertex3f(1.0,-1.0,16.1);
 glVertex3f(1.0,-1.0,15.1);
 glVertex3f(5,-4,15.1);
-
 glEnd();
 
 glBegin(GL_POLYGON);
@@ -323,7 +321,6 @@ glVertex3f(-4,-4,16.1);
 glVertex3f(-5,-4,16.1);
 glVertex3f(-1.0,-1.0,16.1);              //ATAP KIRI PINTU SEGITIGA
 glVertex3f(0.0,-1.0,16.1);
-
 glEnd();
 
 glBegin(GL_POLYGON);
@@ -637,7 +634,115 @@ glEnd();
  glutSolidCone(2, 2, 10, 10);
  glPopMatrix();
 
+//salim
+//PEMBENTUKAN MATAHARI
+glPushMatrix();
+ glColor3f(1.0,1.0,0.2);
+ glTranslatef(-30, 25, -20.5);
+ glutSolidSphere(4., 100, 100);
+ glScaled (1.5,1.5,1.5);
+ glPopMatrix();
+glEnd();
 
+//PEMBENTUKAN LAMPU KANAN
+glBegin(GL_QUADS);
+glColor3f(1.0,1.0,1.2);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);                // BALON LAMPU KANAN
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+
+glPushMatrix();
+glTranslatef(20, -3, 20.5);
+glutSolidSphere(1, 100, 100);
+glScaled (1.5,1.5,1.5);
+glPopMatrix();
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(20.4,-3.7,21);
+glVertex3f(20.4,-10,21);                //TIANG LAMPU SAMPING KANAN
+glVertex3f(20.4,-10,20);
+glVertex3f(20.4,-3.7,20);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(19.4,-3.7,21);
+glVertex3f(19.4,-10,21);                //TIANG LAMPU SAMPING KIRI
+glVertex3f(19.4,-10,20);
+glVertex3f(19.4,-3.7,20);
+glEnd();
+
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(20.4,-3.7,21);
+glVertex3f(20.4,-10,21);                //TIANG LAMPU KANAN DEPAN
+glVertex3f(19.4,-10,21);
+glVertex3f(19.4,-3.7,21);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(20.4,-3.7,20);
+glVertex3f(20.4,-10,20);                //TIANG LAMPU KANAN BELAKANG
+glVertex3f(19.4,-10,20);
+glVertex3f(19.4,-3.7,20);
+glEnd();
+
+
+//PEMBENTUKAN LAMPU KIRI
+glBegin(GL_QUADS);
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);                 //BALON LAMPU KIRI
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+ glPushMatrix();
+ glTranslatef(-20, -3, 20.5);
+ glutSolidSphere(1., 100, 100);         //PEMBENTUKAN LAMPU KIRI
+ glScaled (1.5,1.5,1.5);
+ glPopMatrix();
+
+ glBegin(GL_QUADS);
+ glColor3f(0.3, 0.1, 0.0);
+glVertex3f(-20.4,-3.7,21);
+glVertex3f(-20.4,-10,21);              //TIANG LAMPU SAMPING KIRI
+glVertex3f(-20.4,-10,20);
+glVertex3f(-20.4,-3.7,20);
+glEnd();
+
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(-19.4,-3.7,21);
+glVertex3f(-19.4,-10,21);              //TIANG LAMPU SAMPING KIRI
+glVertex3f(-19.4,-10,20);
+glVertex3f(-19.4,-3.7,20);
+glEnd();
+
+
+glBegin(GL_QUADS);
+glColor3f(0.3, 0.1, 0.0);
+glVertex3f(-20.4,-3.7,21);
+glVertex3f(-20.4,-10,21);              //TIANG LAMPU KANAN DEPAN
+glVertex3f(-19.4,-10,21);
+glVertex3f(-19.4,-3.7,21);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-20.4,-3.7,20);
+glVertex3f(-20.4,-10,20);               //TIANG LAMPU KANAN BELAKANG
+glVertex3f(-19.4,-10,20);
+glVertex3f(-19.4,-3.7,20);
+glEnd();
+//
 
 //Zahwa
 //PEMBENTUKAN KURSI TAMAN
