@@ -478,6 +478,241 @@ glVertex3f(15.2,-2.5,-9.1);
 glVertex3f(15.2,-2,-9.1);
 glEnd();
 
+//Abdull
+//PEMBENTUKAN DINDING PILAR
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2.1,15);
+glVertex3f(-15,2.1,10);                  //PILAR DEPAN KIRI
+glVertex3f(-10,2.1,10);
+glVertex3f(-10,2.1,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);                //PILAR DEPAN KIRI KEATAS
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+//PILAR DINDING DEPAN KIRI
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,15);
+glVertex3f(-15,15,15);                 //DINDING PILAR DEPAN
+glVertex3f(-10,15,15);
+glVertex3f(-10,2,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,10);
+glVertex3f(-15,15,10);                 //DINDING PILAR BELAKANG
+glVertex3f(-10,15,10);
+glVertex3f(-10,2,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,15);
+glVertex3f(-15,15,15);                 //DINDING PILAR KIRI
+glVertex3f(-15,15,10);
+glVertex3f(-15,2,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-10,2,15);
+glVertex3f(-10,15,15);                //DINDING PILAR KANAN
+glVertex3f(-10,15,10);
+glVertex3f(-10,2,10);
+glEnd();
+
+//BOLONG DI PILAR KIRI//PILAR KECIL BAGIAN DEPAN KANAN
+//KANAN DEPAN
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,15,15);
+glVertex3f(-11,20,15);                 //DINDING PILAR DEPAN KANAN
+glVertex3f(-10,20,15);
+glVertex3f(-10,15,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,15,14);
+glVertex3f(-11,20,14);                 //DINDING PILAR DEPAN KANAN BAGIAN2
+glVertex3f(-10,20,14);
+glVertex3f(-10,15,14);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,20,14);
+glVertex3f(-11,20,15);
+glVertex3f(-11,15,15);                 //DINDING PILAR DEPAN KANAN BAGIAN KIRI
+glVertex3f(-11,15,14);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-10,20,14);
+glVertex3f(-10,20,15);
+glVertex3f(-10,15,15);                 //DINDING PILAR DEPAN KANAN BAGIAN KANAN
+glVertex3f(-10,15,14);
+glEnd();
+
+//BELAKANG KANAN
+//PILAR KECIL BAGIAN BELAKANG KANAN
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,15,10);
+glVertex3f(-11,20,10);                 //DINDING PILAR BELAKANG KANAN
+glVertex3f(-10,20,10);
+glVertex3f(-10,15,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,15,11);
+glVertex3f(-11,20,11);                 //DINDING PILAR BELAKANG KANAN BAGIAN2
+glVertex3f(-10,20,11);
+glVertex3f(-10,15,11);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-11,20,10);
+glVertex3f(-11,20,11);
+glVertex3f(-11,15,11);                 //DINDING PILAR DEPAN KANAN BAGIAN KIRI
+glVertex3f(-11,15,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-10,20,10);
+glVertex3f(-10,20,11);
+glVertex3f(-10,15,11);                 //DINDING PILAR DEPAN KANAN BAGIAN KANAN
+glVertex3f(-10,15,10);
+glEnd();
+
+//PILAR KECIL BAGIAN BELAKANG KIRI
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,15,10);
+glVertex3f(-15,20,10);                 //DINDING BELAKANG PILAR BELAKANG KIRI
+glVertex3f(-14,20,10);
+glVertex3f(-14,15,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,15,11);
+glVertex3f(-15,20,11);                 //DINDING DEPAN PILAR BELAKANG KIRI BAGIAN2
+glVertex3f(-14,20,11);
+glVertex3f(-14,15,11);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,20,10);
+glVertex3f(-15,20,11);
+glVertex3f(-15,15,11);                 //DINDING KIRI PILAR BELAKANG KIRI
+glVertex3f(-15,15,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-14,20,10);
+glVertex3f(-14,20,11);
+glVertex3f(-14,15,11);
+glVertex3f(-14,15,10);                  //DINDING KANAN PILAR BELAKANG BAGIAN2
+glEnd();
+
+//PILAR KECIL BAGIAN BELAKANG KIRI
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,15,14);
+glVertex3f(-15,20,14);                  //DINDING BELAKANG PILAR BELAKANG KIRI
+glVertex3f(-14,20,14);
+glVertex3f(-14,15,14);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,15,15);
+glVertex3f(-15,20,15);                  //DINDING DEPAN PILAR BELAKANG KIRI BAGIAN2
+glVertex3f(-14,20,15);
+glVertex3f(-14,15,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-15,20,14);
+glVertex3f(-15,20,15);
+glVertex3f(-15,15,15);                  //DINDING KIRI PILAR BELAKANG KIRI
+glVertex3f(-15,15,14);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.48,0.46,0.46);
+glVertex3f(-14,20,14);
+glVertex3f(-14,20,15);
+glVertex3f(-14,15,15);
+glVertex3f(-14,15,14);                  //DINDING KANAN PILAR BELAKANG BAGIAN2
+glEnd();
+
+//PILAR DINDING DEPAN KANAN
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2.1,15);
+glVertex3f(15,2.1,10);                  //PILAR DEPAN KANAN
+glVertex3f(10,2.1,10);
+glVertex3f(10,2.1,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,15.1,15);
+glVertex3f(15,15.1,10);                 //PILAR DEPAN KANAN ATAS
+glVertex3f(10,15.1,10);
+glVertex3f(10,15.1,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,10);
+glVertex3f(15,15,10);                   //DINDING PILAR DEPAN
+glVertex3f(10,15,10);
+glVertex3f(10,2,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,15);
+glVertex3f(15,15,15);                   //DINDING PILAR BELAKANG
+glVertex3f(10,15,15);
+glVertex3f(10,2,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15,2,15);
+glVertex3f(15,15,15);                   //DINDING PILAR KIRI
+glVertex3f(15,15,10);
+glVertex3f(15,2,10);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(10,2,15);
+glVertex3f(10,15,15);                   //DINDING PILAR KANAN
+glVertex3f(10,15,10);
+glVertex3f(10,2,10);
+glEnd();
+
+
 //tegar
 //PILAR DINDING BELAKANG KANAN
 glBegin(GL_QUADS);
