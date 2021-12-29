@@ -10,6 +10,7 @@ void keyboard(unsigned char, int, int); //+1
 void lingkaran(int xp, int yp, int r, int n);
 float a,x,y;
 
+<<<<<<< HEAD
 
 //main program
 int main (int argc, char** argv){
@@ -55,6 +56,45 @@ glVertex3f(15,2,-15);
 glEnd();
 
 glBegin(GL_QUADS);
+=======
+//main program
+int main (int argc, char** argv){
+    glutInit(&argc, argv);
+    glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH );
+    glutInitWindowPosition(150, 100);   //Mengatur sumbu x dan y
+    glutInitWindowSize(600, 600);       //Mengatur lebar dan tinggi jendela
+    glutCreateWindow("FINAL GRAFKOM KELOMPOK 6");
+    glutDisplayFunc(display);           //Memanggil fungsi display
+    glutReshapeFunc(reshape);           //Memanggil fungsi reshape
+    glutKeyboardFunc(keyboard);
+    init();
+    glutMainLoop();                      //looping program utama
+}void init(){
+    glEnable(GL_DEPTH_TEST);
+    glClearColor(0.0,0.0,0.0, 1.0);
+}
+
+void display(){
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+//PEMBENTUKAN DINDING
+glBegin(GL_QUADS);
+glColor3f(0.0,0.1,0.1);
+glVertex3f(-15,2,15);
+glVertex3f(-15,-10,15);                 //DINDING DEPAN
+glVertex3f(15,-10,15);
+glVertex3f(15,2,15);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-15,2,-15);
+glVertex3f(-15,-10,-15);                //DINDING BELAKANG
+glVertex3f(15,-10,-15);
+glVertex3f(15,2,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15,2,15);
 glVertex3f(-15,-10,15);                 //DINDING KIRI
 glVertex3f(-15,-10,-15);
@@ -71,23 +111,55 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.0,0.1,0.1);
 glVertex3f(-15,2,15);
+<<<<<<< HEAD
 glVertex3f(-15,2,-15);                  //DINDING ATAS/ATAP
+=======
+glVertex3f(-15,2,-15);                 //DINDING ATAS/ATAP
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15,2,-15);
 glVertex3f(15,2,15);
 glEnd();
 
 glBegin(GL_QUADS);
+<<<<<<< HEAD
 glColor3f(0.8,0.8,0.8);                 //DINDING BAWAH
+=======
+glColor3f(0.8,0.8,0.8);                //DINDING BAWAH ATAU TANAH
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-40,-10.2,30);
 glVertex3f(-40,-10.2,-30);
 glVertex3f(40,-10.2,-30);
 glVertex3f(40,-10.2,30);
 glEnd();
 
+<<<<<<< HEAD
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15,2,15.1);
 glVertex3f(-15,1.8,15.1);                 //GARIS ATAS DEPAN
+=======
+//PEMBENTUKAN KUBAH
+glBegin(GL_QUADS);
+glColor3ub(255,178,102);
+glVertex3f(-15,15.1,15);
+glVertex3f(-15,15.1,10);
+glVertex3f(-10,15.1,10);
+glVertex3f(-10,15.1,15);
+glEnd();
+
+glPushMatrix();
+glTranslatef(0, 1, 0);
+glutSolidSphere(8, 100, 100);
+glScaled (1.5,1.5,1.5);
+glPopMatrix();
+
+//Esy Anugerah
+//PEMBENTUKAN GARIS DINDING
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15,2,15.1);
+glVertex3f(-15,1.8,15.1);              //GARIS DINDING ATAS DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15,1.8,15.1);
 glVertex3f(15,2,15.1);
 glEnd();
@@ -95,7 +167,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15,-9.8,15.1);
+<<<<<<< HEAD
 glVertex3f(-15,-10,15.1);                 //GARIS BAWAH DEPAN
+=======
+glVertex3f(-15,-10,15.1);              //GARIS DINDING BAWAH DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15,-10,15.1);
 glVertex3f(15,-9.8,15.1);
 glEnd();
@@ -103,7 +179,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15,2,-15.1);
+<<<<<<< HEAD
 glVertex3f(-15,1.8,-15.1);                 //GARIS ATAS BELAKANG
+=======
+glVertex3f(-15,1.8,-15.1);             //GARIS DINDING ATAS BELAKANG
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15,1.8,-15.1);
 glVertex3f(15,2,-15.1);
 glEnd();
@@ -111,7 +191,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15,-9.8,-15.1);
+<<<<<<< HEAD
 glVertex3f(-15,-10,-15.1);                 //GARIS BAWAH BELAKANG
+=======
+glVertex3f(-15,-10,-15.1);             //GARIS DINDING BAWAH BELAKANG
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15,-10,-15.1);
 glVertex3f(15,-9.8,-15.1);
 glEnd();
@@ -119,15 +203,32 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.1,2,15);
+<<<<<<< HEAD
 glVertex3f(-15.1,1.8,15);                 //GARIS DINDING KIRI ATAS
+=======
+glVertex3f(-15.1,1.8,15);              //GARIS DINDING KIRI ATAS
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.1,1.8,-15);
 glVertex3f(-15.1,2,-15);
 glEnd();
 
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
+<<<<<<< HEAD
 glVertex3f(15.1,2,15);
 glVertex3f(15.1,1.8,15);                 //GARIS DINDING KANAN ATAS
+=======
+glVertex3f(-15.1,-9.8,15);
+glVertex3f(-15.1,-10,15);              //GARIS DINDING KIRI BAWAH
+glVertex3f(-15.1,-10,-15);
+glVertex3f(-15.1,-9.8,-15);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.1,2,15);
+glVertex3f(15.1,1.8,15);               //GARIS DINDING KANAN ATAS
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.1,1.8,-15);
 glVertex3f(15.1,2,-15);
 glEnd();
@@ -135,13 +236,18 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.1,-9.8,15);
+<<<<<<< HEAD
 glVertex3f(15.1,-10,15);                 //GARIS DINDING KANAN BAWAH
+=======
+glVertex3f(15.1,-10,15);               //GARIS DINDING KANAN BAWAH
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.1,-10,-15);
 glVertex3f(15.1,-9.8,-15);
 glEnd();
 
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
+<<<<<<< HEAD
 glVertex3f(-15.1,-9.8,15);
 glVertex3f(-15.1,-10,15);                 //GARIS DINDING KIRI BAWAH
 glVertex3f(-15.1,-10,-15);
@@ -152,6 +258,10 @@ glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.1,2,15.2);
 glVertex3f(-15.1,-10,15.2);                 //GARIS DINDING DEPAN KIRI
+=======
+glVertex3f(-15.1,2,15.2);
+glVertex3f(-15.1,-10,15.2);           //GARIS DINDING DEPAN KIRI
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-14.9,-10,15.2);
 glVertex3f(-14.9,2,15.2);
 glEnd();
@@ -159,7 +269,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.1,2,15.2);
+<<<<<<< HEAD
 glVertex3f(15.1,-10,15.2);                 //GARIS DINDING DEPAN KANAN
+=======
+glVertex3f(15.1,-10,15.2);            //GARIS DINDING DEPAN KANAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(14.9,-10,15.2);
 glVertex3f(14.9,2,15.2);
 glEnd();
@@ -167,7 +281,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.1,2,-15.2);
+<<<<<<< HEAD
 glVertex3f(-15.1,-10,-15.2);                 //GARIS DINDING BELAKANG KIRI
+=======
+glVertex3f(-15.1,-10,-15.2);          //GARIS DINDING BELAKANG KIRI
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-14.9,-10,-15.2);
 glVertex3f(-14.9,2,-15.2);
 glEnd();
@@ -175,45 +293,73 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.1,2,-15.2);
+<<<<<<< HEAD
 glVertex3f(15.1,-10,-15.2);                 //GARIS DINDING BELAKANG KANAN
+=======
+glVertex3f(15.1,-10,-15.2);           //GARIS DINDING BELAKANG KANAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(14.9,-10,-15.2);
 glVertex3f(14.9,2,-15.2);
 glEnd();
 
 glBegin(GL_QUADS);
 glVertex3f(-15.2,2,15.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-10,15.1);                 //GARIS DINDING KIRI DEPAN
+=======
+glVertex3f(-15.2,-10,15.1);           //GARIS DINDING KIRI DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-10,14.9);
 glVertex3f(-15.2,2,14.9);
 glEnd();
 
 glBegin(GL_QUADS);
 glVertex3f(-15.2,2,-15.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-10,-15.1);                 //GARIS DINDING KIRI BELAKANG
+=======
+glVertex3f(-15.2,-10,-15.1);          //GARIS DINDING KIRI BELAKANG
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-10,-14.9);
 glVertex3f(-15.2,2,-14.9);
 glEnd();
 
 glBegin(GL_QUADS);
 glVertex3f(15.2,2,15.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-10,15.1);                 //GARIS DINDING KANAN DEPAN
+=======
+glVertex3f(15.2,-10,15.1);           //GARIS DINDING KANAN DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-10,14.9);
 glVertex3f(15.2,2,14.9);
 glEnd();
 
 glBegin(GL_QUADS);
 glVertex3f(15.2,2,-15.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-10,-15.1);                 //GARIS DINDING KANAN DEPAN
+=======
+glVertex3f(15.2,-10,-15.1);         //GARIS DINDING KANAN DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-10,-14.9);
 glVertex3f(15.2,2,-14.9);
 glEnd();
 
 
+<<<<<<< HEAD
 //PINTU 3
 glBegin(GL_QUADS);
 glColor3f(1.0,1.0,1.0);
 glVertex3f(-11,-4,15.1);
 glVertex3f(-11,-10,15.1);                 //PINTU KIRI DEPAN
+=======
+//PEMBENTUKAN PINTU
+glBegin(GL_QUADS);
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-11,-4,15.1);
+glVertex3f(-11,-10,15.1);              //PINTU KIRI DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-7,-10,15.1);
 glVertex3f(-7,-4,15.1);
 glEnd();
@@ -221,7 +367,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(1.0,1.0,1.0);
 glVertex3f(11,-4,15.1);
+<<<<<<< HEAD
 glVertex3f(11,-10,15.1);                 //PINTU KANAN DEPAN
+=======
+glVertex3f(11,-10,15.1);              //PINTU KANAN DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(7,-10,15.1);
 glVertex3f(7,-4,15.1);
 glEnd();
@@ -229,11 +379,16 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(1.0,1.0,1.0);
 glVertex3f(5,-4,15.1);
+<<<<<<< HEAD
 glVertex3f(5,-10,15.1);                 //PINTU TENGAH DEPAN
+=======
+glVertex3f(5,-10,15.1);               //PINTU TENGAH DEPAN
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-5,-10,15.1);
 glVertex3f(-5,-4,15.1);
 glEnd();
 
+<<<<<<< HEAD
 
 glBegin(GL_QUADS);
 glColor3f(1.0,1.0,1.2);
@@ -582,6 +737,14 @@ glVertex3f(5,-10,16.1);                 //PINTU TIANG KANAN DEPAN 3D
 glVertex3f(4,-10,16.1);
 glVertex3f(4,-4,16.1);
 
+=======
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(5,-4,16.1);
+glVertex3f(5,-10,16.1);               //PINTU TIANG KANAN DEPAN 3D
+glVertex3f(4,-10,16.1);
+glVertex3f(4,-4,16.1);
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glEnd();
 
 glBegin(GL_POLYGON);
@@ -600,11 +763,19 @@ glVertex3f(4,-10,15.1);
 glVertex3f(4,-4,15.1);
 glEnd();
 
+<<<<<<< HEAD
 
 glBegin(GL_POLYGON);
 glColor3f(0.3,0.1,0.0);
 glVertex3f(-5,-4,16.1);
 glVertex3f(-5,-10,16.1);                 //PINTU TIANG KIRI DEPAN 3D
+=======
+//Asrina
+glBegin(GL_POLYGON);
+glColor3f(0.3,0.1,0.0);
+glVertex3f(-5,-4,16.1);
+glVertex3f(-5,-10,16.1);              //PINTU TIANG KIRI DEPAN 3D
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-4,-10,16.1);
 glVertex3f(-4,-4,16.1);
 
@@ -630,7 +801,11 @@ glBegin(GL_POLYGON);
 glColor3f(0.3,0.1,0.0);
 glVertex3f(4,-4,16.1);
 glVertex3f(5,-4,16.1);
+<<<<<<< HEAD
 glVertex3f(1.0,-1.0,16.1);                 //ATAP KANAN PINTU SEGITIGA
+=======
+glVertex3f(1.0,-1.0,16.1);             //ATAP KANAN PINTU SEGITIGA
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(0.0,-1.0,16.1);
 
 glEnd();
@@ -654,7 +829,11 @@ glBegin(GL_POLYGON);
 glColor3f(0.3,0.1,0.0);
 glVertex3f(-4,-4,16.1);
 glVertex3f(-5,-4,16.1);
+<<<<<<< HEAD
 glVertex3f(-1.0,-1.0,16.1);                 //ATAP KIRI PINTU SEGITIGA
+=======
+glVertex3f(-1.0,-1.0,16.1);              //ATAP KIRI PINTU SEGITIGA
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(0.0,-1.0,16.1);
 
 glEnd();
@@ -682,6 +861,7 @@ glVertex3f(-5,-4,15.1);
 glVertex3f(5,-4,15.1);
 glEnd();
 
+<<<<<<< HEAD
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15,2.1,15);
@@ -782,7 +962,7 @@ glVertex3f(-11,20,11);                 //DINDING PILAR BELAKANG KANAN BAGIAN2
 glVertex3f(-10,20,11);
 glVertex3f(-10,15,11);
 glEnd();
-
+//tes
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(-11,20,10);
@@ -1031,6 +1211,14 @@ glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.2,-4,13.1);
 glVertex3f(-15.2,-9,13.1);                 //DINDING KIRI KACA 1(DEPAN/DARI KANAN URUTANNYA)
+=======
+
+//PEMBENTUKAN JENDELA DINDING KIRI
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(-15.2,-4,13.1);
+glVertex3f(-15.2,-9,13.1);                 //DINDING KIRI KACA 1
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-9,9.1);
 glVertex3f(-15.2,-4,9.1);
 glEnd();
@@ -1038,7 +1226,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(-15.2,-2,13.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-2.5,13.1);                 //ventilasi
+=======
+glVertex3f(-15.2,-2.5,13.1);               //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-2.5,9.1);
 glVertex3f(-15.2,-2,9.1);
 glEnd();
@@ -1054,7 +1246,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(-15.2,-2,7.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-2.5,7.1);                 //ventilasi
+=======
+glVertex3f(-15.2,-2.5,7.1);               //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-2.5,3.1);
 glVertex3f(-15.2,-2,3.1);
 glEnd();
@@ -1062,7 +1258,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.2,-4,-7.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-9,-7.1);                 //DINDING KIRI KACA 3
+=======
+glVertex3f(-15.2,-9,-7.1);                //DINDING KIRI KACA 3
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-9,-3.1);
 glVertex3f(-15.2,-4,-3.1);
 glEnd();
@@ -1070,7 +1270,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(-15.2,-2,-7.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-2.5,-7.1);                 //ventilasi
+=======
+glVertex3f(-15.2,-2.5,-7.1);              //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-2.5,-3.1);
 glVertex3f(-15.2,-2,-3.1);
 glEnd();
@@ -1078,7 +1282,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-15.2,-4,-13.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-9,-13.1);                 //DINDING KIRI KACA 4
+=======
+glVertex3f(-15.2,-9,-13.1);              //DINDING KIRI KACA 4
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-9,-9.1);
 glVertex3f(-15.2,-4,-9.1);
 glEnd();
@@ -1086,17 +1294,29 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(-15.2,-2,-13.1);
+<<<<<<< HEAD
 glVertex3f(-15.2,-2.5,-13.1);                 //ventilasi
+=======
+glVertex3f(-15.2,-2.5,-13.1);            //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(-15.2,-2.5,-9.1);
 glVertex3f(-15.2,-2,-9.1);
 glEnd();
 
 
+<<<<<<< HEAD
 //KACA DINDING KANAN
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.2,-4,13.1);
 glVertex3f(15.2,-9,13.1);                 //DINDING KANAN KACA 1(DEPAN/DARI KIRI URUTANNYA)
+=======
+//PEMBENTUKAN JENDELA DINDING KANAN
+glBegin(GL_QUADS);
+glColor3f(0.8,0.8,0.8);
+glVertex3f(15.2,-4,13.1);
+glVertex3f(15.2,-9,13.1);                 //DINDING KANAN KACA 1
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-9,9.1);
 glVertex3f(15.2,-4,9.1);
 glEnd();
@@ -1104,7 +1324,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(15.2,-2,13.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-2.5,13.1);                 //ventilasi
+=======
+glVertex3f(15.2,-2.5,13.1);               //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-2.5,9.1);
 glVertex3f(15.2,-2,9.1);
 glEnd();
@@ -1112,7 +1336,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.2,-4,7.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-9,7.1);                 //DINDING KANAN KACA 2
+=======
+glVertex3f(15.2,-9,7.1);                  //DINDING KANAN KACA 2
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-9,3.1);
 glVertex3f(15.2,-4,3.1);
 glEnd();
@@ -1124,15 +1352,22 @@ glVertex3f(15.2,-2.5,7.1);                 //ventilasi
 glVertex3f(15.2,-2.5,3.1);
 glVertex3f(15.2,-2,3.1);
 glEnd();
+<<<<<<< HEAD
 //
 //
 //
 
+=======
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(15.2,-4,-7.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-9,-7.1);                 //DINDING KANAN KACA 3
+=======
+glVertex3f(15.2,-9,-7.1);                  //DINDING KANAN KACA 3
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-9,-3.1);
 glVertex3f(15.2,-4,-3.1);
 glEnd();
@@ -1140,7 +1375,11 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(15.2,-2,-7.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-2.5,-7.1);                 //ventilasi
+=======
+glVertex3f(15.2,-2.5,-7.1);                //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-2.5,-3.1);
 glVertex3f(15.2,-2,-3.1);
 glEnd();
@@ -1156,11 +1395,16 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3f(0.48,0.46,0.46);
 glVertex3f(15.2,-2,-13.1);
+<<<<<<< HEAD
 glVertex3f(15.2,-2.5,-13.1);                 //ventilasi
+=======
+glVertex3f(15.2,-2.5,-13.1);              //ventilasi
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 glVertex3f(15.2,-2.5,-9.1);
 glVertex3f(15.2,-2,-9.1);
 glEnd();
 
+<<<<<<< HEAD
 glBegin(GL_QUADS);
 glColor3f(0.1,0.3,0.1);
 glVertex3f(-15,15.1,15);
@@ -1299,4 +1543,285 @@ break;
 
 }
 display();
+=======
+//Zahwa
+//PEMBENTUKAN KURSI TAMAN
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 19.0f);        //DEPAN
+glVertex3f(-9.0f, -7.2f, 19.0f);
+glVertex3f(-15.0f, -7.2f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 23.0f);        //BELAKANG
+glVertex3f(-9.0f, -7.2f, 23.0f);
+glVertex3f(-15.0f, -7.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS); //+8
+glVertex3f(-15.0f, -8.2f, 19.0f);
+glVertex3f(-15.0f, -7.2f, 19.0f);       //KIRI
+glVertex3f(-15.0f, -7.2f, 23.0f);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-9.0f, -8.2f, 19.0f);
+glVertex3f(-9.0f, -7.2f, 19.0f);        //KANAN
+glVertex3f(-9.0f, -7.2f, 23.0f);
+glVertex3f(-9.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glVertex3f(-15.0f, -8.2f, 19.0f);
+glVertex3f(-9.0f, -8.2f, 19.0f);        //ATAS
+glVertex3f(-9.0f, -8.2f, 23.0f);
+glVertex3f(-15.0f, -8.2f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+glVertex3f(-9.0f, -6.2f, 19.0f);
+glVertex3f(-9.0f, -6.2f, 19.0f);        //BAWAH
+glVertex3f(-9.0f, -6.2f, 23.0f);
+glVertex3f(-9.0f, -6.2f, 23.0f);
+glEnd();
+
+ //PEMBENTUKAN KAKI KURSI BAGIAN KIRI BELAKANG
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,19.6f);
+ glVertex3f(-14.6f, -8.2f, 19.6f);
+ glVertex3f(-14.6f, -10.0f, 19.6f);     //DEPAN
+ glVertex3f(-15.0f, -10.0f, 19.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -8.2f,19.0f);
+ glVertex3f(-14.6f, -8.2f,19.0f);
+ glVertex3f(-14.6f, -10.0f, 19.0f);     //BELAKANG
+ glVertex3f(-15.0f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-14.6f,-8.2f,19.0f);
+ glVertex3f(-14.6f, -8.2f, 19.6f);      //KIRI
+ glVertex3f(-14.6f, -10.0f, 19.6f);
+ glVertex3f(-14.6f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,19.0f);
+ glVertex3f(-15.0f, -8.2f, 19.6f);       //KANAN
+ glVertex3f(-15.0f, -10.0f, 19.6f);
+ glVertex3f(-15.0f, -10.0f, 19.0f);
+glEnd();
+
+ // KAKI KURSI BAGIAN KIRI DEPAN
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,23.0f);
+ glVertex3f(-14.6f, -8.2f, 23.0f);      //BELAKANG
+ glVertex3f(-14.6f, -10.0f, 23.0f);
+ glVertex3f(-15.0f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,22.6f);
+ glVertex3f(-14.6f, -8.2, 22.6f);       //DEPAN
+ glVertex3f(-14.6f, -10.0f, 22.6f);
+ glVertex3f(-15.0f, -10.0f, 22.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glColor3ub(160,82,45);
+ glVertex3f(-14.6f,-8.2f,23.0f);
+ glVertex3f(-14.6f, -8.2f, 22.6f);      //KIRI
+ glVertex3f(-14.6f, -10.0f, 22.6f);
+ glVertex3f(-14.6f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f,-8.2f,23.0f);
+ glVertex3f(-15.0f, -8.2f, 22.6f);      //KANAN
+ glVertex3f(-15.0f, -10.0f, 22.6f);
+ glVertex3f(-15.0f, -10.0f, 23.0f);
+glEnd();
+
+// KAKI KURSI BAGIAN KANAN DEPAN
+glBegin(GL_QUADS); //+8
+ glVertex3f(-9.0f,-8.2f,23.0f);
+ glVertex3f(-9.6f, -8.2f, 23.0f);       //BELAKANG
+ glVertex3f(-9.6f, -10.0f, 23.0f);
+ glVertex3f(-9.0f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,22.6f);
+ glVertex3f(-9.6f, -8.2f, 22.6f);       //DEPAN
+ glVertex3f(-9.6f, -10.0f, 22.6f);
+ glVertex3f(-9.0f, -10.0f, 22.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-9.6f, -8.2f,23.0f);
+ glVertex3f(-9.6f, -8.2f, 22.6f);       //KIRI
+ glVertex3f(-9.6f, -10.0f, 22.6f);
+ glVertex3f(-9.6f, -10.0f, 23.0f);
+glEnd();
+
+glBegin(GL_QUADS); //+8
+ glVertex3f(-9.0f, -8.2f,23.0f);
+ glVertex3f(-9.0f, -8.2f, 22.6f);       //KANAN
+ glVertex3f(-9.0f, -10.0f, 22.6f);
+ glVertex3f(-9.0f, -10.0f, 23.0f);
+glEnd();
+
+//KAKI KURSI BAGIAN KANAN BELAKNG
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,19.0f);
+ glVertex3f(-9.6f, -8.2f, 19.0f);       //BELAKANG
+ glVertex3f(-9.6f, -10.0f, 19.0f);
+ glVertex3f(-9.0f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -8.2f,19.6f);
+ glVertex3f(-9.6f, -8.2f, 19.6f);       //DEPAN
+ glVertex3f(-9.6f, -10.0f, 19.6f);
+ glVertex3f(-9.0f, -10.0f, 19.6f);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(160,82,45);
+ glVertex3f(-9.6f,-8.2f,19.0f);
+ glVertex3f(-9.6f, -8.2f, 19.6f);       //KIRI
+ glVertex3f(-9.6f, -10.0f, 19.6f);
+ glVertex3f(-9.6f, -10.0f, 19.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f,-8.2f,19.0f);
+ glVertex3f(-9.0f, -8.2f, 19.6f);       //kanan
+ glVertex3f(-9.0f, -10.0f, 19.6f);
+ glVertex3f(-9.0f, -10.0f, 19.0f);
+glEnd();
+
+//SENDERAN KURSI GURU
+glBegin(GL_QUADS); //+8
+glColor3ub(160,82,45);
+ glVertex3f(-15.0f, -5.2f,19.4f);
+ glVertex3f(-9.0f, -5.2f, 19.4f);      //DEPAN
+ glVertex3f(-9.0f, -7.5f, 19.4f);
+ glVertex3f(-15.0f,-7.5f,19.4f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -5.2f,20.0f);
+ glVertex3f(-9.0f, -5.2f, 20.0f);       //BELAKANG
+ glVertex3f(-9.0f, -7.5f, 20.0f);
+ glVertex3f(-15.0f, -7.5f,20.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glColor3ub(160,82,45);
+ glVertex3f(-15.0f, -5.2f, 20.0f);
+ glVertex3f(-15.0f, -7.5f, 20.0f);       //KIRI
+ glVertex3f(-15.0f, -7.5f, 19.4f);
+ glVertex3f(-15.0f, -5.2f, 19.4f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-9.0f, -5.2f, 19.4f);
+ glVertex3f(-9.0f, -7.5f, 19.4f);        //KANAN
+ glVertex3f(-9.0f, -7.5f, 20.0f);
+ glVertex3f(-9.0f, -5.2f, 20.0f);
+glEnd();
+
+glBegin(GL_QUADS);
+ glVertex3f(-15.0f, -7.5f, 20.0f);
+ glVertex3f(-15.0f, -7.5f, 20.4f);      //ATAS
+ glVertex3f(-9.0f, -7.5f, 19.4f);
+ glVertex3f(-9.0f, -7.5f, 19.0f);
+glEnd();
+
+glFlush();
+glutSwapBuffers();
+}
+
+void reshape(int w, int h){
+    glViewport(0,0, (GLsizei)w, (GLsizei)h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(50.0, w / h, 1.0, 400.0);
+    glTranslatef(0.0, -5.0, -100.0);
+    glMatrixMode(GL_MODELVIEW);
+}
+void keyboard(unsigned char key, int x, int y)
+{
+    //program keyboard
+    switch (key){
+        //zoom out
+        case 'w':
+        case 'W':
+        glTranslatef(0.0, 0.0, -1.0);
+        break;
+        //ini komentar
+        //zoom in
+        case 's':
+        case 'S':
+        glTranslatef(0.0, 0.0, 1.0);
+        break;
+
+        //geser ke atas
+        case 'e':
+        case 'E':
+        glTranslatef(0.0, 1.0, 0.0);
+        break;
+
+        //geser ke bawah
+        case 'q':
+        case 'Q':
+        glTranslatef(0.0, -1.0, 0.0);
+        break;
+        //test
+        //geser ke kiri
+        case 'a':
+        case 'A':
+        glTranslatef(-1.0, 0.0, 0.0);
+        break;
+
+        //geser ke kanan
+        case 'd':
+        case 'D':
+        glTranslatef(1.0, 0.0, 0.0);
+        break;
+
+        //putar ke kanan
+        case 'c':
+        case 'C':
+        glRotatef(3.0, 0.0, 1.0, 0.0);
+        break;
+
+        //putar ke kiri
+        case 'z':
+        case 'Z':
+        glRotatef(-3.0, 0.0, 1.0, 0.0); //geser ke kiri
+        break;
+
+        case '.':
+        case '>':
+        glRotatef(-3.0, -1.0, 0.0, 0.0); //putar ke atas
+        break;
+
+        case ',':
+        case '<':
+        glRotatef(-3.0, 1.0, 0.0, 0.0); //putar ke bawah
+        break;
+    }
+    display();
+>>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 }
