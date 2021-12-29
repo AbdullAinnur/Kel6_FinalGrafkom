@@ -724,7 +724,7 @@ void keyboard(unsigned char key, int x, int y)
         case 'Q':
         glTranslatef(0.0, -1.0, 0.0);
         break;
-
+        //test
         //geser ke kiri
         case 'a':
         case 'A':

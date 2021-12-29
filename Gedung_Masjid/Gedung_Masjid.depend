@@ -11,7 +11,11 @@
 	<stddef.h>
 	<GL/gl.h>
 
+<<<<<<< HEAD
 881782880 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+=======
+881786480 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+>>>>>>> edb0862cf78b5ae089f2f6866fbcbf5be4877112
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -234,7 +238,11 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
+<<<<<<< HEAD
 1640595384 source:d:\final grafika komputer kel. 6\kel6_finalgrafkom\gedung_masjid\main.cpp
+=======
+1640741270 source:d:\kel6_grafkom\kel6_finalgrafkom\gedung_masjid\main.cpp
+>>>>>>> edb0862cf78b5ae089f2f6866fbcbf5be4877112
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
