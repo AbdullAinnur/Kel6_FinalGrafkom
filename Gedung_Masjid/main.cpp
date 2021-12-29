@@ -1008,6 +1008,7 @@ glVertex3f(-15,15,-10);
 glVertex3f(-15,2,-10);
 glEnd();
 
+//menambahkan komentar
 glBegin(GL_QUADS);
 glColor3f(0.8,0.8,0.8);
 glVertex3f(-10,2,-15);
