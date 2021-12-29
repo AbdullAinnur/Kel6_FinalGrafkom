@@ -11,8 +11,10 @@
 	<stddef.h>
 	<GL/gl.h>
 
-1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-	"freeglut_std.h"
+881782880 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
 
 1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
@@ -231,4 +233,10 @@
 
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
+
+1640595384 source:d:\final grafika komputer kel. 6\kel6_finalgrafkom\gedung_masjid\main.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<math.h>
 

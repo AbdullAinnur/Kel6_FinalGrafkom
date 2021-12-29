@@ -706,7 +706,7 @@ void keyboard(unsigned char key, int x, int y)
         case 'W':
         glTranslatef(0.0, 0.0, -1.0);
         break;
-
+        //ini komentar
         //zoom in
         case 's':
         case 'S':
