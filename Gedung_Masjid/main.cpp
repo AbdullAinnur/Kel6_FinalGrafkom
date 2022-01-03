@@ -10,6 +10,7 @@ void keyboard(unsigned char, int, int); //+1
 void lingkaran(int xp, int yp, int r, int n);
 float a,x,y;
 
+//woiiii
 <<<<<<< HEAD
 
 //main program
