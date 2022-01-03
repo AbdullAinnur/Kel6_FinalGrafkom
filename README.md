@@ -1,6 +1,6 @@
 # Kel6_FinalGrafkom
 esy anugerah
-sapayah wkwkw
-sjjsjsjs
-asasasas
-dddddd
+tes tes saja
+aaaaaaaaaaaaaa
+aaa
+
