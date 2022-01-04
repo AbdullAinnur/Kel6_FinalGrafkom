@@ -1,35 +1,44 @@
 # depslib dependency file v1.0
-<<<<<<< HEAD
-1640524164 source:c:\users\u53r\desktop\kel6_finalgrafkom\gedung_masjid\main.cpp
-=======
-1640594643 source:d:\projectgrafika\kel6_finalgrafkom\gedung_masjid\main.cpp
->>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
+2008840096 h²ÿ
+
+1641218662 source:c:\users\u53r\desktop\kel6_finalgrafkom\gedung_masjid\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
 	<math.h>
 
-<<<<<<< HEAD
+1640594643 source:d:\projectgrafika\kel6_finalgrafkom\gedung_masjid\main.cpp
+
+1640741270 ac9d890abe0bafc41e3565574ae77a1456bac
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<math.h>
+
+1341006774 D
+
 881782880 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-=======
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
 	<stddef.h>
 	<GL/gl.h>
+	<stddef.h>
+	<GL/gl.h>
 
-<<<<<<< HEAD
-881782880 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-=======
-881786480 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
->>>>>>> edb0862cf78b5ae089f2f6866fbcbf5be4877112
->>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
+881786480 b0862cf78b5ae089f2f6866fbcbf5be4877112
+
+881786480 5ac9d890abe0bafc41e3565574ae77a1456bac
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-<<<<<<< HEAD
-=======
+881786480 AD
+
 1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
@@ -41,7 +50,6 @@
 	<GL/glu.h>
 	<stdlib.h>
 
->>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
 1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
 	<stdarg.h>
@@ -246,28 +254,19 @@
 1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
 
-<<<<<<< HEAD
-1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
-
-1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
-	<stddef.h>
-	<GL/gl.h>
-
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
-
-=======
-1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-<<<<<<< HEAD
+1341006774 
+
 1640595384 source:d:\final grafika komputer kel. 6\kel6_finalgrafkom\gedung_masjid\main.cpp
-=======
+
 1640741270 source:d:\kel6_grafkom\kel6_finalgrafkom\gedung_masjid\main.cpp
->>>>>>> edb0862cf78b5ae089f2f6866fbcbf5be4877112
+
+1640741270 0862cf78b5ae089f2f6866fbcbf5be4877112
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
 	<math.h>
 
->>>>>>> 4c5ac9d890abe0bafc41e3565574ae77a1456bac
